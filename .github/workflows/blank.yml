@@ -1,0 +1,17 @@
+name: Example Workflow
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  example_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Run Info
+        run: |
+          echo "Run ID: ${{ github.workflow }}"
+          echo "Run ID: ${{ github.workflow_sha }}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo "Run Number: ${{ github.run_number }}"
+          echo "Run Attempt: ${{ github.run_attempt }}"
