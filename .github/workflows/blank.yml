@@ -12,6 +12,7 @@ jobs:
         run: |
           echo "Run ID: ${{ github.workflow }}"
           echo "Run ID: ${{ github.workflow_sha }}"
+           echo "Run ID: ${{ github.workflow_ref }}"          
           echo "Run ID: ${{ github.run_id }}"
           echo "Run Number: ${{ github.run_number }}"
           echo "Run Attempt: ${{ github.run_attempt }}"
